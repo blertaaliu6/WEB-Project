@@ -1,244 +1,236 @@
+/*==========NavBar===========*/
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
 .header{
-    z-index: 1000;
-  
+  z-index: 1000;
+
 }
 
 a {
-    text-decoration: none;
-    color: var(--black);
-  }
-  
-  li {
-    list-style: none;
-  }
-  
-  .container {
-    max-width: 114rem;
-    margin: 0 auto;
-    padding: 0 3rem;
-    
-  }
-  
-  .d-flex {
-    display: flex;
-    align-items: center;
-  }
-  
-  .top-nav div {
-      justify-content: space-between;
-     
-  }
+  text-decoration: none;
+  color: var(--black);
+}
 
-  .top-nav a {
-      padding-left: 30px;
-  }
-  .nav-center{
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 114rem;
+  margin: 0 auto;
+  padding: 0 3rem;
+  
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+}
+
+.top-nav div {
     justify-content: space-between;
-    justify-content: space-evenly;
    
-    
-  }
+}
 
-  .nav-center li:hover{
-    color: #FF4F04;
-    text-decoration: underline #FF4F04;
-  }
+.top-nav a {
+    padding-left: 30px;
+}
+.nav-center{
+  justify-content: space-between;
+  justify-content: space-evenly;
+ 
+  
+}
 
- .nav-center li {
-    padding-top: 20px;
-    font-size: 20px;
-    
-    color: black;
-   
- }
+.nav-center li:hover{
+  color: #FF4F04;
+  text-decoration: underline #FF4F04;
+}
 
- .nav-center ul {
-   text-align: center;
- }
+.nav-center li {
+  padding-top: 20px;
+  font-size: 20px;
+  
+  color: black;
+ 
+}
+
+.nav-center ul {
+ text-align: center;
+}
 
 
 .logo {
-  width: 100px;
-  
+width: 100px;
+
 }
+/*=====================*/
 
-
-
+/*==========Beauty CSS===========*/
 
 img{
-  text-align: center;
+text-align: center;
 }
 
 .title {
-    font-size: 40px;
-    text-align: center;
-    margin-bottom: 5rem;
-    font-weight: 600;
-    width: 100%;
-    padding-top: 60px;
-  }
-  
-  .title h1 {
-    font-weight: 400;
-  }
-  
-  .title span {
-    color: var(--primary);
-  }
-  
-  .product-center {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    gap: 5rem;
-    margin-bottom: 5rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    justify-content: space-evenly;
-    
-   
-  }
-  
-  .product {
-    text-align: center;
-    padding-bottom: 1rem;
-    transition: all 500ms ease-in-out;
-   
-    
-  }
-  
-  .product:hover {
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .product .img-cover {
-    overflow: hidden;
-  }
-  
-  .product img {
-    transition: all 500ms ease-in-out;
-   
-  }
-  
-  .product:hover img {
-    transform: scale(1.2);
-  }
-  
-  #h1{
-    color: #9c9c9c;
-    font-size: 60px;
-  }
-  
-   .product  p{
-     padding-top: 10px;
-     font-size: 20px;
-   
-  }
-  .price{
-    font-size:18px ;
-  }
-  
-  .btn{
-    border: none;
-    padding: 10px 25px;
-    text-align: center;
-    background-color: black;
-    color: white;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-
-
-  
- 
-  }
-
-  .btn1{
-    border: none;
-  padding: 10px 40px;
+  font-size: 40px;
   text-align: center;
+  margin-bottom: 5rem;
+  font-weight: 600;
+  width: 100%;
+  padding-top: 60px;
+}
+
+.title h1 {
+  font-weight: 400;
+}
+
+.title span {
+  color: var(--primary);
+}
+
+.product-center {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 5rem;
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+  
+}
+
+.product {
+  text-align: center;
+  padding-bottom: 1rem;
+  transition: all 500ms ease-in-out;
+ 
+  
+}
+
+
+.product .img-cover {
+  overflow: hidden;
+}
+
+.product img {
+  transition: all 500ms ease-in-out;
+ 
+}
+
+
+#h1{
+  color: #9c9c9c;
+  font-size: 60px;
+}
+
+ .product  p{
+   padding-top: 10px;
+   font-size: 20px;
+ 
+}
+.price{
+  font-size:18px ;
+}
+
+.btn{
+  border: none;
+  padding: 10px 25px;
+  text-align: center;
+  background-color: black;
+  color: white;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
-  background-color:#9c9c9c;
-  color: white;
+
+}
+
+.btn1{
+  border: none;
+padding: 10px 40px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+background-color:#9c9c9c;
+color: white;
 
 
-  }
+}
 
-  img{
-      padding-top: 40px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-  }
+img{
+    padding-top: 40px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+/*=====================*/
+/*==========Footer===========*/
+footer{
+  display: flex;
+  padding-top: 10%;
+  justify-content: center;
+}
+.footer1 {
 
-  footer{
-    display: flex;
-    padding-top: 10%;
-    justify-content: center;
-  }
-  .footer1 {
+  padding-right: 4%;
+  padding-bottom: 50px;
+
+}
+
+.footer2 {
+  margin-left: 20px;
+  padding-left: 10%;
+
+}
+
+
+.footer3 {
+  margin-left: 50px;
+  padding-left: 5%;
+
+}
+
+.footer4{
+  padding-left: 5%;
+}
+
+.socialmedia{
+
+  padding-top: 2%;
+  display: flex;
+  justify-content: center;
   
-    padding-right: 4%;
-    padding-bottom: 50px;
-  
-  }
-  
-  .footer2 {
-    margin-left: 20px;
-    padding-left: 10%;
-  
-  }
-  
-  
-  .footer3 {
-    margin-left: 50px;
-    padding-left: 5%;
-  
-  }
-  
-  .footer4{
-    padding-left: 5%;
-  }
-  
-  .socialmedia{
-  
-    padding-top: 2%;
-    display: flex;
-    justify-content: center;
-    
-  }
-  
-  .socialmedia >div img {
-    padding-left: 70px;
-  }
-  
-  
-  .teDrejtat {
-    padding-top: 30px;
-    text-align: center;
-  }
-  
-  
-  hr {
-    opacity: 0.2;
-  }
-  
-  #foto{
-      width: 220px;
-  }
-  
+}
+
+.socialmedia >div img {
+  padding-left: 70px;
+}
+
+
+.teDrejtat {
+  padding-top: 30px;
+  text-align: center;
+}
+
+
+hr {
+  opacity: 0.2;
+}
+
+#foto{
+    width: 220px;
+}

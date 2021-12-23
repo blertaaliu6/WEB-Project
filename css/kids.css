@@ -1,3 +1,4 @@
+/*==========NavBar===========*/
 *{
     margin: 0;
     padding: 0;
@@ -69,7 +70,8 @@ a {
   width: 115px;
   
 }
-
+/*=====================*/
+/*==========Kids CSS===========*/
 #kids-id {
     text-align: center;
     padding-top: 20px;
@@ -91,7 +93,6 @@ a {
  
 
 }
-
 
 .products {
   color: white;
@@ -116,9 +117,6 @@ a {
   justify-content: center;
   justify-content: space-evenly;
   
-  
-  
- 
 }
 .product {
   text-align: center;
@@ -156,6 +154,9 @@ a {
 .span-qmimi{
   color: red;
 }
+/*=====================*/
+
+/*==========Footer===========*/
 
 footer{
   display: flex;

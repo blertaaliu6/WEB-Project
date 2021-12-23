@@ -1,3 +1,4 @@
+/*==========NavBar===========*/
 *{
     margin: 0;
     padding: 0;
@@ -68,7 +69,8 @@ a {
   width: 100px;
   
 }
-
+/*======================*/
+/*==========Slider===========*/
 .banner {
   position: relative;
   width: 100%;
@@ -185,13 +187,9 @@ transform: rotate(225deg);
 }
 
 
-
-
 .Men-collections {
   font-size: 40px;
   color:#425F85;
-  
-
   
 }
 
@@ -240,11 +238,7 @@ transform: rotate(225deg);
 
 }
 
-
-
-
-
-
+/*==========HOME===========*/
 .div2{
   width: 100%;
 
@@ -272,19 +266,6 @@ transform: rotate(225deg);
 }
 
 
-
-/* .col4{
-  display: block;
-  margin: 120px;
-  margin-left:90px;
-  margin-top:0;
-  justify-content: center;
-  justify-content: space-evenly;
-  text-align: center;
-  
- 
- */
-
 .text{
   text-align: left;
   display: flex;
@@ -303,9 +284,9 @@ color: #FF4F04;
 
 .heading1{
   color: #FF4F04;
+  font-size: 50px;
 
 }
-
 
 .title {
   font-size: 40px;
@@ -313,6 +294,7 @@ color: #FF4F04;
   margin-bottom: 5rem;
   font-weight: 600;
   width: 100%;
+padding-top: 100px;
 }
 
 .title h1 {
@@ -333,18 +315,17 @@ color: #FF4F04;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  justify-content: space-evenly;
-  
- 
+  justify-content: space-evenly; 
 }
 
 .product {
   text-align: center;
   padding-bottom: 1rem;
   transition: all 500ms ease-in-out;
- 
-  
+
 }
+
+
 
 .product:hover {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
@@ -426,9 +407,9 @@ color: #FF4F04;
   position: absolute;
   bottom: 5%;
   
-  
-
 }
+/*=======================*/
+/*==========Footer===========*/
 footer{
   display: flex;
   padding-top: 10%;
