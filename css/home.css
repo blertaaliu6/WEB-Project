@@ -50,6 +50,7 @@ a {
   .nav-center li:hover{
     color: #FF4F04;
     text-decoration: underline #FF4F04;
+    font-weight: bold;
   }
 
  .nav-center li {

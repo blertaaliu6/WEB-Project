@@ -78,15 +78,91 @@
     .login-form{
       display: flex;
       justify-content: center;
-      padding-top: 150px;
-    }
+      padding-top: 200px;
     
+      
+    }
+      .img img{
+    
+      margin: 70px;
+      padding: 10px;
+      height: 600px;
+      width: 800px;
+    
+    }
     
     .img-form{
       margin-right: 250px;
     }
+
+  h2{
+    text-align: center;
+    background-color: #fff;
+   
+  }
+  .container-signin{
+      width: 400px;
+      background-color: #fff;
+      border-radius: 4px;
+      overflow: hidden;
+  }
+  .header-signin{
+      background-color: #fff;
+      padding: 10px 20px;
+      padding-top: 200px;
+  }
+  .form{
+      padding: 20px 40px;
+      background-color: #fff;
+  }
+  
+  .form-control{
+      margin-bottom:10px;
+      padding-bottom: 10px;
+      position: relative;
+      background-color: #fff;
+  }
+  .form-control lable {
+      display: inline-block;
+      margin-bottom:5px;
+      background-color: #fff;
+  }
+  .form-control input{
+      display: block;
+      width: 100%;
+      padding: 10px;
+      border-radius: 4px;
+      border:2px solid #fff;
+  }
+  .form-control a{
     
-    .img img{
+    color: green;
+    padding-left: 130px;
+    background-color: #fff;
+  
+  }
+  .form-control.success input{
+      border:2px solid rgb(26, 167, 26);
+  }
+  .form-control.error input{
+      border:2px solid rgb(228, 29, 22);
+  }
+  .form-control small{
+      position:absolute;
+      margin: 3px;
+      visibility: hidden;
+  }
+  button{
+      background-color: #234de8;
+      color:#fff;
+      padding: 10px 20px;
+      width: 100%;
+      border-radius:4px;
+      border:2px solid #234de8;
+      cursor: pointer;
+      margin-bottom: 20px;
+  }
+    /* .img img{
     
       margin: 70px;
       padding: 10px;
@@ -134,6 +210,7 @@
     
     p{
       background-color: white;
+      margin-left: 130px;
     }
     
    #link{
@@ -143,7 +220,7 @@
     #button {
       background-color: #234DE8;
       color: white;
-    }
+    } */
     
 
     /*==========Footer===========*/
