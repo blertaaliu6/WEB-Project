@@ -144,6 +144,10 @@ a {
   width: 100px;
   height: 30px;
   text-align: center;
+  font-size: 11px;
+}
+.btn-kids:hover{
+  cursor: pointer;
 }
 
 #shop-kids{
