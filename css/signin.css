@@ -1,4 +1,6 @@
 
+   
+
     /*==========NavBar===========*/
     *{
         margin: 0;
@@ -83,12 +85,21 @@
       
     }
       .img img{
+<<<<<<< HEAD
     
       margin: 70px;
       padding: 10px;
       height: 600px;
       width: 800px;
     
+=======
+    
+      margin: 70px;
+      padding: 10px;
+      height: 600px;
+      width: 800px;
+    
+>>>>>>> dfe84526435d19718187e15d1d16564750599e0c
     }
     
     .img-form{
@@ -196,7 +207,6 @@
       padding-bottom: 20px;
       color: #2E384D;
     }
-
     
     .form-info label {
       background-color: white;
