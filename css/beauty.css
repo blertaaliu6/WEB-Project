@@ -48,8 +48,9 @@ li {
 }
 
 .nav-center li:hover{
-  color: #FF4F04;
-  text-decoration: underline #FF4F04;
+  color: #707070;
+  text-decoration: underline #707070;
+  font-weight: bold;
 }
 
 .nav-center li {
@@ -139,6 +140,8 @@ text-align: center;
 }
 .price{
   font-size:18px ;
+  color: red;
+  font-weight: bold;
 }
 
 .btn{

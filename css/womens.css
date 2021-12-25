@@ -48,8 +48,9 @@ li {
 }
 
 .nav-center li:hover{
-  color: #FF4F04;
-  text-decoration: underline #FF4F04;
+  color: #7744b1;
+  text-decoration: underline #7744b1;
+  font-weight: bold;
 }
 
 .nav-center li {
@@ -126,12 +127,9 @@ text-align: center;
  
 }
 
-/* .product:hover img {
-  transform: scale(1.2);
-} */
 
 #h1{
-  color: #e5d1fc;
+  color: #d8bdf7;
   font-size: 60px;
 }
 
@@ -142,6 +140,8 @@ text-align: center;
 }
 .price{
   font-size:18px ;
+  color: red;
+  font-weight: bold;
 }
 
 .btn{
@@ -167,7 +167,7 @@ display: inline-block;
 font-size: 16px;
 margin: 4px 2px;
 cursor: pointer;
-background-color:#e5d1fc;
+background-color:#d8bdf7;
 color: white;
 
 
