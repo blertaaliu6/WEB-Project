@@ -11,10 +11,10 @@ function validateInput(){
 
 
     if(fname.value.trim()===""){
-        onError(fname," Name cannot be empty");
+        onError(fname," Emri eshte i zbrazet!");
      }else{
         if(!isValidName(fname.value.trim())){
-            onError(fname,"Name is not valid");
+            onError(fname,"Emri duhet te filloj me shkronje te madhe!");
         }else{
             onSuccess(fname);
         }
@@ -26,10 +26,10 @@ function validateInput(){
 
 
      if(Lname.value.trim()===""){
-        onError(lname," Last Name cannot be empty");
+        onError(lname,"Mbiemri eshte i zbrazet");
      }else{
         if(!isValidLname(Lname.value.trim())){
-            onError(Lname,"Last name is not valid");
+            onError(Lname,"Mbiemri duhet te filloj me shkronje te madhe!");
         }else{
             onSuccess(Lname);
         }
@@ -40,10 +40,10 @@ function validateInput(){
 
     //check username is empty 
     if(userName.value.trim()===""){
-       onError(userName,"User Name cannot be empty");
+       onError(userName,"Username eshte i zbrazet");
     }else{
         if(!isValidUsername(userName.value.trim())){
-            onError(userName,"Username name is not valid");
+            onError(userName,"Username-i ka me pak se 8 karaktere");
         }else{
             onSuccess(userName);
         }
@@ -54,10 +54,10 @@ function validateInput(){
 
 
     if(email.value.trim()===""){
-        onError(email,"Email cannot be empty");
+        onError(email,"Email eshte i zbrazet");
     }else{
         if(!isValidEmail(email.value.trim())){
-            onError(email,"Email is not valid");
+            onError(email,"Email eshte dhene gabim!");
         }else{
             onSuccess(email);
         }
@@ -65,19 +65,19 @@ function validateInput(){
 
     //password
     if(pwd.value.trim()===""){
-        onError(pwd,"Password cannot be empty");
+        onError(pwd,"Password eshte i zbrazet");
      }else{
         if(!isValidPassword(pwd.value.trim())){
-            onError(pwd,"Password is not valid");
+            onError(pwd,"Password-i duhet te kete 3 numra ne fund!");
         }else{
             onSuccess(pwd);
         }
      }
      if(conPwd.value.trim()===""){
-        onError(conPwd,"Password cannot be empty");
+        onError(conPwd,"Password eshte i zbrazet");
      }else{
          if(pwd.value.trim()!==conPwd.value.trim()){
-            onError(conPwd,"Password & Confirm password not matching");
+            onError(conPwd,"Password & Confirm password nuk perputhen!");
          }
          else
          onSuccess(conPwd);

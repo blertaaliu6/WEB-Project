@@ -7,10 +7,10 @@ let form=document.querySelector("form");
 function validateInput(){
     //check username is empty 
     if(username.value.trim()===""){
-        onError(username," Username cannot be empty!");
+        onError(username," Username eshte i zbrazet!");
      }else{
         if(!isValidUsername(username.value.trim())){
-            onError(username,"Username is not valid!");
+            onError(username,"Username-i juaj ka me pak se 8 karaktere!");
         }else{
             onSuccess(username);
         }
@@ -19,10 +19,10 @@ function validateInput(){
    
     //password
     if(password.value.trim()===""){
-        onError(password,"Password cannot be empty!");
+        onError(password,"Password eshte i zbrazet!");
      }else{
         if(!isValidPassword(password.value.trim())){
-            onError(password,"Password is not valid!");
+            onError(password,"Password-i duhet te kete 3 numra ne fund!");
         }else{
             onSuccess(password);
         }

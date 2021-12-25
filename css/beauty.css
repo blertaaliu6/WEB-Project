@@ -170,9 +170,13 @@ cursor: pointer;
 background-color:#9c9c9c;
 color: white;
 
-
 }
-
+.product .btn:hover{
+  background-color: rgb(56, 55, 55);
+}
+.product .btn1:hover{
+  background-color: #636060;
+}
 img{
     padding-top: 40px;
   display: block;

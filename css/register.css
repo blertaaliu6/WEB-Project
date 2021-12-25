@@ -1,3 +1,4 @@
+/*==========NAV BAR=============*/
 *{
     margin: 0;
     padding: 0;
@@ -69,7 +70,8 @@ a {
   width: 100px;
   
 }
-
+/*=========================*/
+/*=========Sign Up===========*/
 .reigster-form{
   padding-top: 30px;
  
@@ -175,3 +177,52 @@ button{
 small{
   background: white;
 }
+
+  /*==========Footer===========*/
+    footer{
+        display: flex;
+        padding-top: 10%;
+        justify-content: center;
+      }
+      .footer1 {
+      
+        padding-right: 4%;
+        padding-bottom: 50px;
+      
+      }
+      
+      .footer2 {
+        margin-left: 20px;
+        padding-left: 10%;
+      
+      }
+      
+      
+      .footer3 {
+        margin-left: 50px;
+        padding-left: 5%;
+      
+      }
+      
+      .footer4{
+        padding-left: 5%;
+      }
+      
+      .socialmedia{
+      
+        padding-top: 2%;
+        display: flex;
+        justify-content: center;
+        
+      }
+      
+      .socialmedia >div img {
+        padding-left: 70px;
+      }
+      
+      
+      .teDrejtat {
+        padding-top: 30px;
+        text-align: center;
+      }
+      
