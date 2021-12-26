@@ -178,9 +178,13 @@ button{
 small{
   background: white;
 }
+
 hr {
   opacity: 0.2;
 }
+
+
+
   /*==========Footer===========*/
     footer{
         display: flex;
