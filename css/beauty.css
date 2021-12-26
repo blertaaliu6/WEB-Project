@@ -180,11 +180,8 @@ color: white;
 .product .btn1:hover{
   background-color: #636060;
 }
-
 .img-cover img{
   padding-top: 40px;
-}
-
   display: block;
   margin-left: auto;
   margin-right: auto;
