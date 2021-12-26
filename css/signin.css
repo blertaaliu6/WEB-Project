@@ -11,7 +11,9 @@
         z-index: 1000;
       
     }
-    
+    hr {
+      opacity: 0.2;
+    }
     a {
         text-decoration: none;
         color: var(--black);
@@ -68,6 +70,7 @@
     
     .logo {
       width: 100px;
+      padding-top: 5px;
       
     }
     /*======================*/
