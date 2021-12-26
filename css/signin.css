@@ -103,6 +103,7 @@
   }
   .container-signin{
       width: 400px;
+      height: 600px;
       background-color: #fff;
       border-radius: 4px;
       overflow: hidden;
@@ -110,7 +111,7 @@
   .header-signin{
       background-color: #fff;
       padding: 10px 20px;
-      padding-top: 200px;
+      padding-top: 130px;
   }
   .form{
       padding: 20px 40px;
@@ -136,7 +137,6 @@
       border:2px solid #fff;
   }
   .form-control a{
-    
     color: green;
     padding-left: 130px;
     background-color: #fff;
@@ -175,9 +175,7 @@
    p a{
     background-color: #fff;
     color: #234de8;
-    font-weight: bold;
-    
-     
+    font-weight: bold; 
    }
     /*==========Footer===========*/
     footer{
@@ -186,7 +184,6 @@
         justify-content: center;
       }
       .footer1 {
-      
         padding-right: 4%;
         padding-bottom: 50px;
       
@@ -195,7 +192,6 @@
       .footer2 {
         margin-left: 20px;
         padding-left: 10%;
-      
       }
       
       .footer-text p{

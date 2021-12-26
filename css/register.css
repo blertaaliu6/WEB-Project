@@ -105,8 +105,6 @@ a {
   
   display: inline-block;
   margin-bottom:5px;
- 
-
 }
 
 .img{
@@ -118,8 +116,6 @@ a {
 .form-control small{
   position: absolute;
   visibility: hidden;
-
-
 }
 
 
@@ -132,8 +128,6 @@ a {
   width: 250px;
   height: 40px;
   margin-top: 5px;
-
-
 }
 
 
@@ -169,6 +163,7 @@ button{
 .form-control a{
   background-color: white;
   color: #2E5BFF;
+  font-weight: bold;
 }
 
 .label{
@@ -182,8 +177,6 @@ small{
 hr {
   opacity: 0.2;
 }
-
-
 
   /*==========Footer===========*/
     footer{

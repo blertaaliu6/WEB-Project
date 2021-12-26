@@ -155,7 +155,7 @@ hr {
   color: white;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 12px;
   margin: 4px 2px;
   cursor: pointer;
 
@@ -167,7 +167,7 @@ padding: 10px 40px;
 text-align: center;
 text-decoration: none;
 display: inline-block;
-font-size: 16px;
+font-size: 12px;
 margin: 4px 2px;
 cursor: pointer;
 background-color:#9c9c9c;
