@@ -1,0 +1,199 @@
+/*==========NavBar===========*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.header{
+  z-index: 1000;
+
+}
+
+a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 114rem;
+  margin: 0 auto;
+  padding: 0 3rem;
+  
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+}
+
+.top-nav div {
+    justify-content: space-between;
+   
+}
+
+.top-nav a {
+    padding-left: 30px;
+}
+.nav-center{
+  justify-content: space-between;
+  justify-content: space-evenly;
+ 
+  
+}
+
+.nav-center li:hover{
+  color: #FF4F04;
+  text-decoration: underline #FF4F04;
+  font-weight: bold;
+}
+
+.nav-center li {
+  padding-top: 20px;
+  font-size: 20px;
+  
+  color: black;
+ 
+}
+
+.nav-center ul {
+ text-align: center;
+}
+
+
+.logo {
+  padding-top: 5px;
+width: 100px;
+
+}
+
+form {
+  max-width: 550px;
+  width: 90%;
+  background: white;
+  margin: 17vh auto 0 auto;
+  padding: 40px;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+
+h1{
+  margin: 0;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin: 20px 0;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  outline: none;
+  resize: none;
+  border: none;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+
+input[type="text"]:focus, textarea:focus {
+  border-bottom: 1px solid rgb(255, 0, 106);
+}
+
+textarea::-webkit-scrollbar {
+  width: 4px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 0, 106);
+}
+
+.center {
+  text-align: center;
+}
+
+input[type="submit"] {
+  margin-top: 30px;
+  width: 90%;
+  max-width: 200px;
+  background: linear-gradient(to right, rgb(255, 0, 106),rgb(255, 67, 61));
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
+  border-radius: 3px;
+
+}
+
+.error {
+  color: red;
+}
+
+.error-border {
+  border-bottom: 1px solid red;
+}
+
+#success {
+  color: #28a745;
+}
+
+
+
+footer{
+  display: flex;
+  padding-top: 10%;
+  justify-content: center;
+}
+.footer1 {
+
+  padding-right: 4%;
+  padding-bottom: 50px;
+
+}
+
+.footer2 {
+  margin-left: 20px;
+  padding-left: 10%;
+
+}
+
+
+.footer3 {
+  margin-left: 50px;
+  padding-left: 5%;
+
+}
+
+.footer4{
+  padding-left: 5%;
+}
+
+.socialmedia{
+
+  padding-top: 2%;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.socialmedia >div img {
+  padding-left: 70px;
+}
+
+
+.teDrejtat {
+  padding-top: 30px;
+  text-align: center;
+}
+
+
+hr {
+  opacity: 0.2;
+}
