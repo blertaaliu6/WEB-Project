@@ -15,6 +15,9 @@ a {
   text-decoration: none;
   color: var(--black);
 }
+hr {
+  opacity: 0.2;
+}
 
 li {
   list-style: none;
@@ -68,6 +71,7 @@ li {
 
 .logo {
 width: 100px;
+padding-top: 5px;
 
 }
 /*=======================*/
@@ -172,9 +176,22 @@ color: white;
 
 
 }
-
-img{
+.product .btn:hover{
+  background-color: rgb(99, 96, 96);
+}
+.product .btn1:hover{
+  background-color: #c39af1;
+}
+.img-cover img{
     padding-top: 40px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.cover-photo {
+  padding-top: 40px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -219,8 +236,9 @@ footer{
   
 }
 
-.socialmedia >div img {
+.socialmedia  img {
   padding-left: 70px;
+  visibility: visible;
 }
 
 

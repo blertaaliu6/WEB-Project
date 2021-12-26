@@ -46,6 +46,9 @@ a {
    
     
   }
+  hr {
+    opacity: 0.2;
+  }
 
   .nav-center li:hover{
     color: #4c92ce;

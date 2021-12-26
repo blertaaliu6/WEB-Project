@@ -1,21 +1,19 @@
-
-   
-
-    /*==========NavBar===========*/
+ /*==========NavBar===========*/
     *{
         margin: 0;
         padding: 0;
         box-sizing: border-box;
         font-family: 'Roboto', sans-serif;
         background-color: #F4F6FC;
-        /* background-color: #fff; */
     }
     
     .header{
         z-index: 1000;
       
     }
-    
+    hr {
+      opacity: 0.2;
+    }
     a {
         text-decoration: none;
         color: var(--black);
@@ -72,6 +70,7 @@
     
     .logo {
       width: 100px;
+      padding-top: 5px;
       
     }
     /*======================*/
@@ -80,26 +79,16 @@
     .login-form{
       display: flex;
       justify-content: center;
-      padding-top: 200px;
+      padding-top: 130px;
     
       
     }
-      .img img{
-<<<<<<< HEAD
-    
+      .img{
       margin: 70px;
       padding: 10px;
       height: 600px;
       width: 800px;
     
-=======
-    
-      margin: 70px;
-      padding: 10px;
-      height: 600px;
-      width: 800px;
-    
->>>>>>> dfe84526435d19718187e15d1d16564750599e0c
     }
     
     .img-form{
@@ -109,6 +98,7 @@
   h2{
     text-align: center;
     background-color: #fff;
+    color:#234de8 ;
    
   }
   .container-signin{
@@ -150,8 +140,11 @@
     color: green;
     padding-left: 130px;
     background-color: #fff;
-  
+    font-weight: bold;
+   
   }
+  
+
   .form-control.success input{
       border:2px solid rgb(26, 167, 26);
   }
@@ -172,67 +165,20 @@
       border:2px solid #234de8;
       cursor: pointer;
       margin-bottom: 20px;
+      font-size: 15px;
   }
-    /* .img img{
-    
-      margin: 70px;
-      padding: 10px;
-      height: 600px;
-      width: 800px;
-    
-    }
-    
-    .form-info{
-      background-color: #fff;
-      height: 600px;
-      width: 400px;
-      
-      padding: 40px;
-      margin: 50px 80px;
-      padding-top: 130px;
-    }
-    
-    .form-info input {
-      background-color: #F4F6FC;
-      width: 300px;
-      height: 40px;
-      border-radius: 4px;
-      border-color: 1px #F4F6FC;
-      border: none;
-    }
-    
-    
-    h1{
-      background-color: white;
-      padding-bottom: 20px;
-      color: #2E384D;
-    }
-    
-    .form-info label {
-      background-color: white;
-      color: #2E384D;
-    }
-    
-    .form-info a {
-      background-color: white;
-      color: blue;
-    }
-    
-    p{
-      background-color: white;
-      margin-left: 130px;
-    }
-    
-   #link{
-       color: rgb(26, 168, 26);
+   p{
+     background-color: #fff;
+     color: #8C98A9;
+     
    }
+   p a{
+    background-color: #fff;
+    color: #234de8;
+    font-weight: bold;
     
-    #button {
-      background-color: #234DE8;
-      color: white;
-    } */
-    
-
+     
+   }
     /*==========Footer===========*/
     footer{
         display: flex;
@@ -252,7 +198,9 @@
       
       }
       
-      
+      .footer-text p{
+        background-color:#F4F6FC ;
+      }
       .footer3 {
         margin-left: 50px;
         padding-left: 5%;
@@ -279,5 +227,10 @@
       .teDrejtat {
         padding-top: 30px;
         text-align: center;
+        
+      }
+      .teDrejtat p {
+        background-color: #F4F6FC;
+        color: black;
       }
       

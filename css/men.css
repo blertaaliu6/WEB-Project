@@ -69,7 +69,7 @@ a {
 
 
 .logo {
-  width: 170px;
+  width: 100px;
   
 }
 /*====================*/
@@ -133,6 +133,9 @@ a {
   padding-bottom: 30px;
 }
 
+hr {
+  opacity: 0.2;
+}
 
 .Tommy-section{
   padding-top: 30px;
