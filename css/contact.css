@@ -124,7 +124,7 @@ input[type="submit"] {
   margin-top: 30px;
   width: 90%;
   max-width: 200px;
-  background: linear-gradient(to right, rgb(255, 0, 106),rgb(255, 67, 61));
+  background: linear-gradient(to right, #234de8,#a023e8);
   color: white;
   font-size: 17px;
   cursor: pointer;
