@@ -232,3 +232,84 @@ footer{
   
   
 
+
+
+  #header_close,
+  #header_toggle{
+   display: none;
+  }
+  
+  
+  @media screen and (max-width: 1100px) and (min-width: 500px){
+    .logo{
+      width: 80px;
+      
+    }
+  
+    #header_toggle{
+      
+      display: inline;
+      color: rgb(8, 8, 8);
+      font-size: 30px;
+      padding-left: 20px;
+    }
+  
+    #header_close{
+      position: absolute;
+      right: 24px;
+      display: block;
+      font-size: 24px;
+      border-radius: 50%;
+      color: white;
+    }
+  
+  
+    .navigation{
+      position: absolute;
+      right: 100%;
+      background-color: #ffffff;
+      border: 1px solid #4a4a4a;
+      color: white;
+      width: 100%;
+      height: 100vh;
+      padding: 24px 0;
+      z-index: 100;
+      transition: 0.5s;
+      
+      
+  
+    }
+    
+    .nav-center{
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .nav-item{
+      margin: 2rem 0;
+    }
+    .show{
+      right: 0;
+    }
+  
+    .nav-center li{
+      color: #ffffff;
+      background-color:#4a4a4a;
+      width: 250px;
+      height: 50px;
+      text-align: center;
+      /* border-radius: 50px; */
+    }
+  
+    
+    .nav-center li:hover{
+      color: rgb(0, 0, 0);
+      
+      
+    }
+    .title h1{
+      font-size: 25px;
+    }
+  
+  }
+
