@@ -195,7 +195,7 @@ color: white;
   width: 80%;
 }
 
-@media screen and (max-width:1300px){
+@media screen and (min-width: 360px) and (max-width:768px){
   #foto1{
     display: none;
   }
@@ -216,6 +216,7 @@ color: white;
     padding-left: 40px;
   }
 }
+
 /*=========================*/
 /*=========Footer===========*/
 .container-footer{
@@ -290,7 +291,7 @@ ul{
 }
 
 /*responsive*/
-@media(max-width: 767px){
+@media(max-width: 768px){
   .footer-col{
     width: 50%;
     margin-bottom: 30px;
