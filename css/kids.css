@@ -161,14 +161,31 @@ hr {
 .span-qmimi{
   color: red;
 }
+
+
+@media screen and (min-width: 360px) and (max-width:768px){
+  #img-kids{
+    display: none;
+  }
+ .title .kids-section{
+   font-size: 35px;
+   padding-left: 20px;
+   padding-right: 20px;
+   }
+   .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+  }
+
+}
 /*=====================*/
 
 /*==========Footer===========*/
 
 
-
-hr {
-  opacity: 0.2;
+.container-footer{
+	max-width: 1170px;
+	margin:auto;
 }
 .row{
 	display: flex;
@@ -187,7 +204,7 @@ ul{
 }
 .footer-col h4{
 	font-size: 18px;
-	color: #ffffff;
+	color: #fff;
 	text-transform: capitalize;
 	margin-bottom: 35px;
 	font-weight: 500;
@@ -198,7 +215,7 @@ ul{
 	position: absolute;
 	left:0;
 	bottom: -10px;
-	background-color: #ffffff;
+	background-color: #fff;
 	height: 2px;
 	box-sizing: border-box;
 	width: 50px;
@@ -209,15 +226,15 @@ ul{
 .footer-col ul li a{
 	font-size: 16px;
 	text-transform: capitalize;
-	color: #ffffff;
+	color: #fff;
 	text-decoration: none;
 	font-weight: 300;
-	color: #ffffff;
+	color: #fff;
 	display: block;
 	transition: all 0.3s ease;
 }
 .footer-col ul li a:hover{
-	color: #ffffff;
+	color: #fff;
 	padding-left: 8px;
 }
 .footer-col .social-links a{
@@ -238,22 +255,17 @@ ul{
 }
 
 /*responsive*/
-@media(max-width: 767px){
+@media(max-width: 768px){
   .footer-col{
     width: 50%;
     margin-bottom: 30px;
-}
+    padding-left: 2px;
+  }
 }
 @media(max-width: 574px){
   .footer-col{
     width: 100%;
-}
-}
-
-
-#header_close,
-#header_toggle{
- display: none;
+  }
 }
 
 
@@ -328,6 +340,6 @@ ul{
   }
   .title h1{
     font-size: 25px;
-  }
+    }
 
-}
+  }
