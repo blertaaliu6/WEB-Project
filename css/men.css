@@ -1,0 +1,346 @@
+/*==========NavBar===========*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header{
+    z-index: 1000;
+  
+}
+
+a {
+    text-decoration: none;
+    color: var(--black);
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  .container {
+    max-width: 114rem;
+    margin: 0 auto;
+    padding: 0 3rem;
+    
+  }
+  
+  .d-flex {
+    display: flex;
+    align-items: center;
+  }
+  
+  .top-nav div {
+      justify-content: space-between;
+     
+  }
+
+  .top-nav a {
+      padding-left: 30px;
+  }
+  .nav-center{
+    justify-content: space-between;
+    justify-content: space-evenly;
+   
+    
+  }
+
+  .nav-center li:hover{
+    
+    color: #425F85;
+    text-decoration: underline #425F85;
+    font-weight: bold;
+    
+  }
+
+ .nav-center li {
+    padding-top: 20px;
+    font-size: 20px;
+    
+    color: black;
+   
+ }
+
+ .nav-center ul {
+   text-align: center;
+ }
+
+
+.logo {
+  width: 100px;
+  
+}
+/*====================*/
+/*==========MEN's CSS===========*/
+
+#img-banner {
+  padding-top: 10%;
+  width: 100%;
+  height: 700px;
+}
+
+
+.products {
+  color: white;
+ 
+  
+}
+.product img {
+  width: 300px;
+  height: 400px;
+}
+
+.product-center {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  
+  gap: 5rem;
+  margin-bottom: 5rem;
+  
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+.product {
+  text-align: center;
+  padding-bottom: 1rem;
+  
+  border-radius: 2px solid black;
+  
+}
+
+#mens-id{
+  text-align: center;
+  padding-top: 30px;
+}
+
+.headingtxt{
+  padding-top: 30px;
+  text-align: center;
+
+}
+
+.paragraf-text{
+  padding-top:20px;
+  padding-bottom: 30px;
+}
+
+hr {
+  opacity: 0.2;
+}
+
+.Tommy-section{
+  padding-top: 30px;
+  font-size: 20px;
+  text-align: center;
+  padding-bottom:30px ;
+}
+
+.btn-mens{
+  margin-top: 10px;
+  background-color: black;
+  color: white;
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  font-size: 11px;
+}
+.btn-mens:hover{
+  cursor: pointer;
+}
+
+#shop-mens{
+  background-color: #425F85;
+}
+
+.span-qmimi{
+  color: red;
+}
+
+.btn-mens:hover{
+  cursor: pointer;
+}
+
+
+@media screen and (min-width: 360px) and (max-width:768px){
+ .title .Tommy-section{
+   font-size: 22px;
+   padding-left: 30px;
+   padding-right: 30px;
+   }
+
+   .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+    padding-left: 40px;
+  }
+
+}
+/*=====================*/
+/*==========Footer===========*/
+
+.container-footer{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #425F85;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #fff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #fff;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #fff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #fff;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #fff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 768px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+    padding-left: 40px;
+  }
+
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+  }
+}
+
+
+@media screen and (max-width: 1100px) and (min-width: 500px){
+  .logo{
+    width: 80px;
+    
+  }
+  
+  #header_toggle{
+    
+    display: inline;
+    color: rgb(8, 8, 8);
+    font-size: 30px;
+    padding-left: 20px;
+  }
+  
+  #header_close{
+    position: absolute;
+    right: 24px;
+    display: block;
+    font-size: 24px;
+    border-radius: 50%;
+    color: white;
+  }
+  
+  #header_close:hover{
+    background-color: tomato;
+  }
+  
+  .navigation{
+    position: absolute;
+    right: 100%;
+    background-color: #ffffff;
+    border: 1px solid #425F85;
+    color: white;
+    width: 100%;
+    height: 100vh;
+    padding: 24px 0;
+    z-index: 100;
+    transition: 0.5s;
+    
+    
+  
+  }
+  
+  
+  .nav-center{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .nav-item{
+    margin: 2rem 0;
+  }
+  .show{
+    right: 0;
+  }
+  
+  .nav-center li{
+    color: #ffffff;
+    background-color:#425F85;
+    width: 250px;
+    height: 50px;
+    text-align: center;
+    /* border-radius: 50px; */
+  }
+  
+  
+  .nav-center li:hover{
+    color: rgb(0, 0, 0);
+    
+    
+  }
+  
+  
+  }
