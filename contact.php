@@ -1,19 +1,4 @@
-<?php
 
-if(isset($_POST['submit'])){
-  include_once 'function.php';
-  $obj = new Contact();
-  $restart = $obj->contact_us($_POST);
-
-  if($restart == true){
-    echo "<script>alert('Query successfully submitted!')</script>";
-  }else{
-    echo "<script>alert('Something went wrong..!')</script>";
-  }
-}
-
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,38 +12,11 @@ if(isset($_POST['submit'])){
     
 </head>
 <body>
-  <header class="header">
-    <div class="top-nav">
-        <div class="container d-flex" >
-        <a href="home.php"><img class="logo" src="img/logo-7.png" alt=""></a>
-            <ul class="d-flex">
-              
-                <li><a href=""><img src="img/6f0a18fad030e38fc7194c6a4c334793.png" alt=""></a></li>
-                <li><a href=""><img src="img/bdcb0c3f6d67999723518ef3c2ad5494.png" alt=""></a></li>
-                <li><a href="signin.php"><img src="img/674aaa8a5939fb3fb007e77121fb1581.png" alt=""></a></li>
-                <i class="fa fa-bars" aria-hidden="true" id="header_toggle"></i>
-            </ul>
-        </div>
-    </div>
-    <hr>
 
-        <nav class="navigation" id="nav-menu">
-           <ul class="nav-center d-flex">
-
-              <li class="nav-item"><a href="womens.php" class="nav-links">Women</a></li>
-              <li class="nav-item"><a href="men.php" class="nav-links">Men</a></li>
-              <li class="nav-item"><a href="kids.php" class="nav-links">Kids</a></li>
-              <li class="nav-item"><a href="beauty.php" class="nav-links">Beauty</a></li>
-              <li class="nav-item"><a href="about.php" class="nav-links">About us</a></li>
-              <li class="nav-item"><a href="contact.php" class="nav-links">Contact Us</a></li> 
-              <li class="nav-item"><a href="blog&news.php" class="nav-links">Blog&News</a></li> 
-
-             </ul>
-          </nav>
-      </header> 
+    <?php  include "includes/header.php" ?>
 
       <div class="contact-forma">
-        <form method = "POST"  onsubmit="event.preventDefault(); validateForm()" >
+        <form method="POST" action="controllers/VerifyContactUs.php" >
 
           <h1>Contact US</h1>
 
@@ -67,15 +25,15 @@ if(isset($_POST['submit'])){
           <small class="error"></small>
 
           <label for="email">Email:</label>
-          <input type="text" id="email" placeholder="Your Email" name="email">
+          <input type="email" id="email" placeholder="Your Email" name="email">
           <small class="error"></small>
 
           <label for="message">Message:</label>
-          <textarea name="" id="message" placeholder="Your message" name="message"  rows="2"></textarea>
+          <textarea id="message" placeholder="Your message" name="message" ></textarea>
           <small class="error"></small>
 
           <div class="center">
-            <input type="submit" value="Send Message" name = "submit">
+            <input type="submit" name="submit">
             <p id="success"></p>
           </div>
         </form>
@@ -127,10 +85,10 @@ if(isset($_POST['submit'])){
 
       </div>
 
-        <script src="js/toggle.js"></script>
+        <!-- <script src="js/toggle.js"></script>
 
       <script src="js/contact.js">
 
-      </script>
+      </script> -->
 </body>
 </html>
