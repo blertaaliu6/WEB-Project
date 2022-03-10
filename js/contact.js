@@ -1,47 +1,27 @@
-const nameInput = document.querySelector("#name");
-const email = document.querySelector("#email");
-const message = document.querySelector("#message");
-const success = document.querySelector("#success");
-const errorNodes = document.querySelectorAll(".error");
+function validateContact(){
+    var inputs = document.getElementsByClassName("input-fields");
 
+    if(inputs[0].value.length === 0 && inputs[1].value.length === 0 && inputs[2].value.length === 0){
+        alert("Fushat nuk mund te jene te zbrazeta!");
+        return false;
 
-function validateForm(){
-    clearMessages();
-    let errorFlag = false;
+    }else if(inputs[0].value.length <= 3){
+        alert('Emri nuk mund te jete me i shkurter se 4 karaktere!');
+        return false;
 
-    if(nameInput.value.length < 1){
-        errorNodes[0].innerText = "Name cannot be blank";
-        nameInput.classList.add("error-border");
-        errorFlag = true;
-    }
+    }else if(!(emailValidate(inputs[1].value))){
+        alert('Emaili eshte shenuar gabim!');
+        return false;
 
-    if(!emailIsValid(email.value)){
-        errorNodes[1].innerText = "Invalid email address";
-        email.classList.add("error-border");
-        errorFlag = true;
-    }
+    }else if(inputs[2].value.length <= 10){
+        alert('Mesazhi nuk mund te jete me i shkurter se 10 karaktere!');
+        return false;
 
-    if(message.value.length < 1){
-        errorNodes[2].innerText = "Please enter message";
-        message.classList.add("error-border");
-        errorFlag = true;
-    }
-    if(!errorFlag){
-        success.innerText = "Success!";
+    }else{
+        return true;
     }
 }
 
-function clearMessages(){
-    for(let i =0; i<errorNodes.length; i++){
-        errorNodes[i].innerText="";
-    }
-    success.innerText = "";
-    nameInput.classList.remove("error-border");
-    email.classList.remove("error-border");
-    message.classList.remove("error-border");
-}
-
-function emailIsValid(email){
-    let pattern = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    return pattern.test(email);
+function emailValidate(email){
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 }

@@ -3,9 +3,9 @@ include_once 'person.php';
 
 class AdminUser extends Person
 {
-    public function __construct($name,$lname,$username, $password, $email, $role,$cpassword)
+    public function __construct($name,$lname,$username, $password,$cpassword,$email, $role)
     {
-        parent::__construct($name,$lname,$username, $password, $email, $role,$cpassword);
+        parent::__construct($name,$lname,$username, $password,$cpassword,$email,$role);
     }
 
     public function setSession()

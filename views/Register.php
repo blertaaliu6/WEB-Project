@@ -53,7 +53,7 @@
                 <h2>Sign Up</h2>
             </div>
             
-            <form class="form" method="POST" action="../controllers/loginverify.php">
+            <form class="form" method="POST" action="../controllers/loginverify.php" onsubmit=" return validateInput()">
                 <div class="form-control">
                     <lable class="label" for="Name" name="name">Name</lable>
                     <input id="Name" type="text" name="name" />
@@ -139,7 +139,7 @@
           </div>
         </div>
      </footer>
-    <!-- <script src="../js/register.js"></script> -->
+    <script src="../js/register.js"></script>
     <script src="../js/toggle.js"></script>
 </body>
 </html>

@@ -10,7 +10,7 @@ abstract class Person
     protected $cpassword;
     protected $role;
 
-    function __construct($name,$lname,$username, $password, $email, $role,$cpassword)
+    function __construct($name,$lname,$username, $password,$cpassword,$email, $role)
     {
         $this->name = $name;
         $this->lname = $lname;

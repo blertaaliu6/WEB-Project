@@ -16,79 +16,23 @@
     <?php  include "includes/header.php" ?>
 
       <div class="contact-forma">
-        <form method="POST" action="controllers/VerifyContactUs.php" >
+        <form method="POST" action="controllers/VerifyContactUs.php" onsubmit="return validateContact()" >
+       
 
           <h1>Contact US</h1>
-
-          <label for="name">Name:</label>
-          <input type="text" id="name" placeholder="Your Name" name ="name">
-          <small class="error"></small>
-
-          <label for="email">Email:</label>
-          <input type="email" id="email" placeholder="Your Email" name="email">
-          <small class="error"></small>
-
-          <label for="message">Message:</label>
-          <textarea id="message" placeholder="Your message" name="message" ></textarea>
-          <small class="error"></small>
-
-          <div class="center">
-            <input type="submit" name="submit">
-            <p id="success"></p>
-          </div>
+            <label for="">Name:</label>
+            <input type="text" name="name" class="input input-fields" placeholder="Your name" />
+            <label for="">Email:</label>
+            <input type="email" name="email" class="input input-fields email" placeholder="Your email">
+            <label for="">Messsage:</label>
+            <textarea name="message" class="input input-fields message" placeholder="Your message"></textarea>
+            <input id="submit" name="submit" type="submit" class="input submit" value="Konfirmo" />
         </form>
-
-
-        <footer class="footer">
-          <div class="container-footer">
-            <div class="row">
-              <div class="footer-col">
-                <h4>company</h4>
-                <ul>
-                  <li><a href="#">about us</a></li>
-                  <li><a href="#">our services</a></li>
-                  <li><a href="#">privacy policy</a></li>
-                  <li><a href="#">affiliate program</a></li>
-                </ul>
-              </div>
-              <div class="footer-col">
-                <h4>get help</h4>
-                <ul>
-                  <li><a href="#">FAQ</a></li>
-                  <li><a href="#">shipping</a></li>
-                  <li><a href="#">returns</a></li>
-                  <li><a href="#">order status</a></li>
-                  <li><a href="#">payment options</a></li>
-                </ul>
-              </div>
-              <div class="footer-col">
-                <h4>online shop</h4>
-                <ul>
-                  <li><a href="#">watch</a></li>
-                  <li><a href="#">bag</a></li>
-                  <li><a href="#">shoes</a></li>
-                  <li><a href="#">dress</a></li>
-                </ul>
-              </div>
-              <div class="footer-col">
-                <h4>follow us</h4>
-                <div class="social-links">
-                  <a href="#"><i class="fab fa-facebook-f"></i></a>
-                  <a href="#"><i class="fab fa-twitter"></i></a>
-                  <a href="#"><i class="fab fa-instagram"></i></a>
-                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-       </footer>
-
       </div>
-
-        <!-- <script src="js/toggle.js"></script>
-
-      <script src="js/contact.js">
-
-      </script> -->
+      <?php
+        include "includes/footer.php";
+      ?>
+        <script src="js/contact.js"></script>
+        <script src="js/toggle.js"></script>
 </body>
 </html>

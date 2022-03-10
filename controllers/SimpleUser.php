@@ -2,8 +2,8 @@
 include_once 'person.php';
 
 class SimpleUser extends Person{
-    public function __construct($name,$lname,$username, $password,$cpassword,$email, $role) {
-        parent::__construct($name,$lname,$username, $password,$cpassword,$email, $role);
+    public function __construct($name,$lname,$username,$password,$cpassword,$email,$role) {
+        parent::__construct($name,$lname,$username,$password,$cpassword,$email,$role);
     }
 
     public function setSession (){

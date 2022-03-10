@@ -15,7 +15,7 @@
   <header class="header">
     <div class="top-nav">
         <div class="container d-flex" >
-        <a href="home.php"><img class="logo" src="../img/logo-7.png" alt=""></a>
+        <a href="../home.php"><img class="logo" src="../img/logo-7.png" alt=""></a>
             <ul class="d-flex">
               
                 <li><a href=""><img src="../img/6f0a18fad030e38fc7194c6a4c334793.png" alt=""></a></li>
@@ -49,7 +49,7 @@
               <div class="header-signin">
                   <h2>Sign in</h2>
               </div>
-              <form class="form" method="POST" action="../controllers/loginverify.php">
+              <form class="form" method="POST" action="../controllers/loginverify.php" onsubmit="return validateInput()">
                   <div class="form-control">
                       <lable for="username" name="username">Username</lable>
                       <input id="username" type="text" name="username" autocomplete="off"/>

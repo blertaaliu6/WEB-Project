@@ -62,7 +62,7 @@
                   
                   if(isset($_SESSION['role']) && $_SESSION["role"] == 1){
                   ?>
-                  <li class="nav-item"><a href="dashboard.php" class="nav-links">Dashboard</a></li>
+                  <li class="nav-item"><a href="views/Dashboard.php" class="nav-links">Dashboard</a></li>
         
         <?php
         }
