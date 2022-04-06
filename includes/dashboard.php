@@ -1,6 +1,6 @@
 
 <html>
-<link rel="stylesheet" href="../css/newDashboard.css">
+<link rel="stylesheet" href="../css/Dashboard.css">
 <div class="container">
         <div class="navigation">
             <ul>
@@ -11,15 +11,9 @@
                     </a>
                 </li>
                 <li>
-                    <a href="../views/contacts.php">
+                    <a href="../home.php">
                     <span class="icon"></span>
-                    <span class="title">Contact Us</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="../views/produktet.php">
-                    <span class="icon"></span>
-                    <span class="title">Products</span>
+                    <span class="title">Home</span>
                     </a>
                 </li>
                 <li>
@@ -29,9 +23,21 @@
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="contacts.php">
+                    <span class="icon"></span>
+                    <span class="title">Contact Us</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="produktet.php">
+                    <span class="icon"></span>
+                    <span class="title">Products</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="news.php">
                     <span class="icon"></span>   
-                    <span class="title">About Us</span>
+                    <span class="title">Blog&News</span>
                     </a>
                 </li>
                 <li>

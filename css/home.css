@@ -514,23 +514,6 @@ bottom: 5%;
 /*=======================*/
 /*==========Footer===========*/
 
-.socialmedia{
-
-padding-top: 2%;
-display: flex;
-justify-content: center;
-
-}
-
-.socialmedia >div img {
-padding-left: 70px;
-}
-
-
-.teDrejtat {
-padding-top: 30px;
-text-align: center;
-}
 
 
 hr {

@@ -1,10 +1,10 @@
 
 <?php
-    require_once '../controllers/MenuController.php';
-    include_once '../includes/dashboard.php';
+
+require_once '../controllers/MenuController.php';
+include_once '../includes/dashboard.php';
 
 ?>
-
 
  <style>
 
@@ -61,8 +61,22 @@
     }
 
     .dashboard{
-        position: relative;
+        /* width: 80%; */
+       
         padding-right:40px;
+       
+    }
+    #btn{
+        padding-left:7px;
+        padding-right:6px;
+        padding-top:4px;
+        padding-bottom:4px;
+        border:1px solid yellow;
+    }
+
+    #btn a{
+        text-decoration:none;
+        font-size:15px;
     }
  </style>
 
@@ -73,10 +87,13 @@
                         <th>Foto</th>
                         <th>Emri Produktit</th>
                         <th>Cmimi</th>
-                        <th>INSERT</th>
-                        <th>EDIT</th>
-                        <th>DELETE</th>
+                        <th>Kategoria</th>
+                        <th>Added by</th>
+                        <th><button id="btn"><a href="insert-products.php">INSERT</a></button></th>
+                        <th>Edit</th>
+                        <th>Delete</th>
                     </tr>
+
                 </thead>
                 <tbody>
                     <?php
@@ -87,6 +104,10 @@
                         <td><?php echo $product['foto_produktit'];?></td>
                         <td><?php echo $product['emri_produktit'];?></td>
                         <td><?php echo $product['cmimi_produktit']; ?></td>
+                        <td><?php echo $product['kategoria'];?></td>
+                        <td><?php echo $product['added'];?></td>
+                       
+                        
                         <td><a href="insert-products.php? id=<?php echo $product['ID']; ?>">Insert</a></td>
                         <td><a href="edit-products.php? id=<?php echo $product['ID']; ?>">Edit</a></td>
                         <td><a href="delete-products.php? id=<?php echo $product['ID']; ?>">Delete</a></td>
@@ -95,3 +116,5 @@
                 </tbody>
             </table>
         </div>
+ 
+   

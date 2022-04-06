@@ -12,12 +12,31 @@ if(isset($_POST['submit'])){
     form{
         border:1px solid;
         background:rgb(148, 203, 247);
+        width:400px;
+        height:200px;
+        font-weight:bold;
+        padding-top:15px;
+        padding-left:5px;
+    }
+    form input{
+        padding-top:3px;
+        padding-left:4px;
+        font-size:17px;
+        font-weight:bold;
     }
     #save{
-        margin-top:20px;
-    }
+        padding-top:4px;
+        padding-bottom:4px;
+        margin-bottom:3px;
+        margin-left:5px;
+        background-color:lightpink;
+        margin-top:35px;
+    }  
+    
+
 </style>
 <div>
+    <h1>Inserto produkte:</h1>
     <form method="POST" >
         Foto:
         <input type="file" name ="foto">
