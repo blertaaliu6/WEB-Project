@@ -14,9 +14,11 @@
 </head>
 <body>
 
+<?php
+ include "includes/header.php";
+ require_once 'controllers/newsMapper.php';
 
-<?php include "includes/header.php" ?>
-
+?>
     <div class="blog-section">
         <div class="section-content blog">
             <div class="title">
@@ -27,80 +29,37 @@
                 </p>
             </div>
             <div class="cards">
-                <div class="card">
-                    <div class="image-section">
-                        <img src="img/blog-news1.jpg" alt="">
-                    </div>
-                    <div class="article">
-                        <h4>Trending now</h4>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                             Illum labore ut, delectus atque cum voluptate quia 
-                             nostrum minima quidem at quibusdam enim quis 
-                             voluptatum pariatur ipsum reiciendis maxime rerum, 
-                             dolores sint praesentium. Eaque dignissimos 
-                            quia hic ratione magnam ex incidunt.
-                             </p>
-                        </div>
-                    <div class="blog-view">
-                        <a href="https://guides.loc.gov/fashion-industry" class="button">Read More</a>
-                    </div>
-                    <div class="posted-date">
-                        <p>Posted on jan 15 2021</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="image-section">
-                        <img src="img/blog-news2.jpg" alt="">
-                    </div>
-                    <div class="article">
-                        <h4>Bold new vision</h4>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                             Illum labore ut, delectus atque cum voluptate quia 
-                             nostrum minima quidem at quibusdam enim quis 
-                             voluptatum pariatur ipsum reiciendis maxime rerum, 
-                             dolores sint praesentium. Eaque dignissimos 
-                            quia hic ratione magnam ex incidunt.
-                             </p>
-                        </div>
-                    <div class="blog-view">
-                        <a href="https://guides.loc.gov/fashion-industry" class="button">Read More</a>
-                    </div>
-                    <div class="posted-date">
-                        <p>Posted on oct 20 2021</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="image-section">
-                        <img src="img/blog-news3.jpg" alt="">
-                    </div>
-                    <div class="article">
-                        <h4>Spring preview</h4>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                             Illum labore ut, delectus atque cum voluptate quia 
-                             nostrum minima quidem at quibusdam enim quis 
-                             voluptatum pariatur ipsum reiciendis maxime rerum, 
-                             dolores sint praesentium. Eaque dignissimos 
-                            quia hic ratione magnam ex incidunt.
-                             </p>
-                        </div>
-                    <div class="blog-view">
-                        <a href="https://guides.loc.gov/fashion-industry" class="button">Read More</a>
-                    </div>
-                    <div class="posted-date">
-                        <p>Posted on june 5 2021</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+            <?php
+                $news = new newsMapper;
+                $all = $news->getAllNews();
+                for($i=0;$i<count($all);$i++){
+               echo' <div class="card">
+
+               <div class="image-section">
+               <img src="' . $all[$i]['foto_lajmit'] . '">
+               </div>
+               <div class="article">
+                   <h4>'. $all[$i]['titulli_lajmit'] . '</h4>
+                   <p>' . $all[$i]['permbajtja_lajmit'] . '</p>
+                   </div>
+               <div class="blog-view">
+                   <a href="https://guides.loc.gov/fashion-industry" class="button">Read More</a>
+               </div>
+               <div class="posted-date">
+                   <p>Posted' . $all[$i]['data_lajmit'] . '</p>
+               </div>
+               
+            </div>';
+                }
+                ?>
+        </div>          
     </div>
+</div>
+
+
 
     <?php  include "includes/footer.php" ?>
-
-
-        <script src="js/toggle.js"></script>
+    <script src="js/toggle.js"></script>
 
 
 </body>
